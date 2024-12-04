@@ -1,8 +1,7 @@
 # Transition paths across the EMT landscape are dictated by network logic
 
 ### Citation
-If you use these methods in your research, please cite [the preprint](https://doi.org/10.1158/2326-6066.CIR-22-0617):
-
+If you use these methods in your research, please cite [the preprint](https://doi.org/10.1158/2326-6066.CIR-22-0617)
 A Dey, AL MacLean (2024), Transition paths across the EMT landscape are dictated by network logic. bioRxiv, BIORXIV/2024/626660. 
 
 ### Overview 
