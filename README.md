@@ -1,20 +1,26 @@
 # Transition paths across the EMT landscape are dictated by network logic
 
 ### Citation
-If you use these methods in your research, please cite [the preprint](https://doi.org/10.1158/2326-6066.CIR-22-0617)
-A Dey, AL MacLean (2024), Transition paths across the EMT landscape are dictated by network logic. bioRxiv, BIORXIV/2024/626660. 
+Please cite the [paper](https://www.biorxiv.org/content/10.1101/2024.12.03.626660v1): 
+
+A Dey, AL MacLean (2024), Transition paths across the EMT landscape are dictated by network logic. bioRxiv, 10.1101/2024.12.03.626660. 
 
 ### Overview 
 This repository contains MATLAB code for analyzing the effects of network logic (AND vs OR) on multistable models of EMT. We analyze tristability via estimation of a potential energy function that permits calculation of the bifurcation landscapes, and analyze model behaviors via statistical analyses and  stochastic simulations. 
 
 Requirements
-- MATLAB (tested on version XXX)
+- MATLAB (tested on version R2023b) 
 - All parameter values are included within respective code files unless otherwise specified
 - Generated parameter files are required for certain analyses as detailed below.
 
-### Project Contents 
+### Project Contents and Usage 
+The following describes the contents of this repository, which can be used to reproduce all of the figures of the paper. The code required to reproduce each figure is contained within the folder of that name. To recapitulate the results from the paper. 
 
-The following describes the contents of this repository, which can be used to reproduce all of the figures of the paper. The code required to reproduce each figure is contained within the folder of that name.
+1. Run the parameter search code first (`CodeMain_RandParSearch_AND.m` and `CodeMain_RandParSearch_OR.m`).
+2. Run perturbation analysis code (`CodeMain_PertAND.m` and `CodeMain_PertOR.m`).
+3. Run stochastic simulations.
+4. Generate figures using the respective figure codes with required parameter files.
+
 
 ### Figure 1
 - `Code_Fig1B.m` - Generates the multistable landscapes plotted in Fig. 1B
@@ -70,9 +76,3 @@ The following describes the contents of this repository, which can be used to re
 - `Code_Fig5BCD.m` - Generates Figures 5B, 5C, and 5D
   - Requires stochastic simulation outputs
 
-
-## Usage
-1. Run the parameter search codes first (`CodeMain_RandParSearch_AND.m` and `CodeMain_RandParSearch_OR.m`)
-2. Run perturbation analysis codes (`CodeMain_PertAND.m` and `CodeMain_PertOR.m`)
-3. Run stochastic simulation codes
-4. Generate figures using the respective figure codes with required parameter files
