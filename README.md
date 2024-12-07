@@ -9,7 +9,7 @@ A Dey, AL MacLean (2024), Transition paths across the EMT landscape are dictated
 This repository contains MATLAB code for analyzing the effects of network logic (AND vs OR) on multistable models of EMT. We analyze tristability via estimation of a potential energy function that permits calculation of the bifurcation landscapes, and analyze model behaviors via statistical analyses and  stochastic simulations. 
 
 Requirements
-- MATLAB (tested on version R2023b) 
+- MATLAB (tested on version R2024a)  
 - All parameter values are included within respective code files unless otherwise specified
 - Generated parameter files are required for certain analyses as detailed below.
 
