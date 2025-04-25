@@ -55,22 +55,26 @@ The following describes the contents of this repository, which can be used to re
   - Requires both parameter files above
 
 ### Figure 4
-- `Fig4_OR_25pcPert.m` - OR model analysis
+- `Fig4_BD_OR_25pcPert.m` - OR model analysis and generates Figs. 4B and 4D
   - Requires `param_SameSA0SB0_OR.mat` and `param_ThrePert_SA0SB0_25pc_OR.mat`
-- `Fig4_AND_25pcPert.m` - AND model analysis
+- `Fig4_AC_AND_25pcPert.m` - AND model analysis and generates Figs. 4A and 4C
   - Requires `param_SameSA0SB0_AND.mat` and `param_ThrePert_SA0SB0_25pc_AND.mat`
+- `Fig4_E_AND.m` - Generates Fig. 4E for AND model
+  - Requires `param_SameSA0SB0_AND.mat` and `param_ThrePert_SA0SB0_25pc_AND.mat`
+- `Fig4_F_OR.m` - Generates Fig. 4F for OR model
+  - Requires `param_SameSA0SB0_OR.mat` and `param_ThrePert_SA0SB0_25pc_OR.mat`
 
 ### Figure 5 (Stochastic model simulation)
-- `AND_EulerMaryama.m` - SDE simulations for AND model
+- `AND_Multi_EulerMaryama.m` - SDE simulations for AND model
   - Outputs:
-    - Unperturbed: `stochEM_sigma1_Unpert_AND.mat`
-    - 25% indirect: `stochEM_sigma1_25pcInd_AND.mat`
-    - 25% direct: `stochEM_sigma1_25pcDir_AND.mat`
-- `OR_EulerMaryama.m` - SDE simulations for OR model
+    - Unperturbed: `stochEM_sigma0o01_V1_Multi_Unpert_AND.mat`
+    - 25% indirect: `stochEM_sigma0o01_V1_Multi_25pcInd_AND.mat`
+    - 25% direct: `stochEM_sigma0o01_V1_Multi_25pcDir_AND.mat`
+- `OR_Multi_EulerMaryama.m` - SDE simulations for OR model
   - Outputs:
-    - Unperturbed: `stochEM_sigma1_Unpert_OR.mat`
-    - 25% indirect: `stochEM_sigma1_25pcInd_OR.mat`
-    - 25% direct: `stochEM_sigma1_25pcDir_OR.mat`
+    - Unperturbed: `stochEM_sigma0o01_V1_Multi_Unpert_OR.mat`
+    - 25% indirect: `stochEM_sigma0o01_V1_Multi_25pcInd_OR.mat`
+    - 25% direct: `stochEM_sigma0o01_V1_Multi_25pcDir_OR.mat`
 - `Code_Fig5A.m` - Generates Figure 5A
   - Requires stochastic simulation outputs
 - `Code_Fig5BCD.m` - Generates Figures 5B, 5C, and 5D
