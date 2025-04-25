@@ -80,3 +80,17 @@ The following describes the contents of this repository, which can be used to re
 - `Code_Fig5BCD.m` - Generates Figures 5B, 5C, and 5D
   - Requires stochastic simulation outputs
 
+### Figure 6 (ICM Differentiation)
+- `Code_Logic1_Fp0o066.m` - ICM Cell proportion for 25 cells in a grid for Logic 1 with Fp = 0.066
+  - Generates the bar plots and pie charts in Figure 6B 
+- `Code_Logic2_DefaultParam_Fp0o066.m` - ICM cell proportion for 25 cells in a grid for Logic 2 with Fp = 0.066
+  - Generates the bar plots and pie charts in Figure 6C
+- `Code_Logic1_FpTriHalf.m` - ICM cell proportion for 25 cells in a grid for Logic 1 with Fp = Midpoint
+  - Generates the bar plots and pie charts in Figure 6D
+- `Code_Logic2_Tri_FpTriHalf.m` - ICM cell proportion for 25 cells in a grid for Logic 2 with Fp = Midpoint
+  - Generates the bar plots and pie charts in Figure 6E
+- `Fig6F_Logic1.m` - Generates Figure 6F for Logic 1
+- `Fig6G_Logic2.m` - Generates Figure 6G for Logic 2
+- `Fig6BD_Bifurcation.ode` - ODE file for plotting Bifurcations in Figs. 6B and 6D for Logic 1 using XPPAUT
+- `Fig6CE_Bifurcation.ode` - ODE file for plotting Bifurcations in Figs. 6C and 6E for Logic 2 using XPPAUT
+
