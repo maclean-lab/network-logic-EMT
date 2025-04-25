@@ -1,0 +1,48 @@
+
+# This is to plot bifurcation for Logic 1 using XPPAUT
+
+dG/dt = (vsg1*ERK^r/(Kag1^r+ERK^r)+vsg2*G^s/(Kag2^s+G^s))*(Kig^q/(Kig^q+N^q))-kdg*G
+
+dN/dt = (vsn1*Kin1^u/(Kin1^u+ERK^u)+vsn2*N^v/(Kan^v+N^v))*(Kin2^w/(Kin2^w+G^w))-kdn*N
+
+dFR/dt = vsfr1*Kifr/(Kifr+N)+vsfr2*G/(Kafr+G)-kdfr*FR
+
+dERK/dt = va*FR*Fp/(Kd+Fp)*(1-ERK)/(Ka+1-ERK)-vin*ERK/(Ki+ERK)
+
+
+p Fp=0.0001
+p vsg1=1.202
+p Kag1=0.28
+p vsg2=1
+p Kag2=0.55
+p Kig=2
+p kdg=1
+p vsn1=0.856
+p Kin1=0.28
+p vsn2=1
+p Kan=0.55
+p Kin2=2
+p kdn=1
+p vsfr1=2.8
+p Kifr=0.5
+p vsfr2=2.8
+p Kafr=0.5
+p kdfr=1
+p va=20
+p Kd=2
+p Ka=0.7
+p vin=3.3
+p Ki=0.7
+p r=3
+p s=4
+p q=4
+p u=3
+p v=4
+p w=4
+
+
+
+@ method=cvode, atoler=1e-5, toler=1e-5
+@ bounds=1e20, total=2000, dt=0.01
+
+done
