@@ -37,7 +37,7 @@ for ik = 1:length(range)
 
     ik
 
-    sb0 = range(ik);
+    sa0 = range(ik);
 
     
 

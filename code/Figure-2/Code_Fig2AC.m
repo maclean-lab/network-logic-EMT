@@ -31,7 +31,7 @@ kb0=0.9486;
 
 
 
-sa0 = 209.7679-0.5*209.7679; % perturbing indirect activation
+%sa0 = 209.7679-0.5*209.7679; % perturbing indirect activation
 
 %sb0 = 209.7679-0.5*209.7679; % perturbing direct activation
 
